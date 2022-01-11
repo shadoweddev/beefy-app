@@ -34,7 +34,7 @@ export const polygonPools = [
       'https://quickswap.exchange/#/swap?inputCurrency=0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619&outputCurrency=0xfbdd194376de19a88118e84e279b977f165d01b8',
   },
   {
-    id: 'quick-UST-MATIC',
+    id: 'quick-ust-matic',
     name: 'UST-MATIC LP',
     token: 'UST-MATIC LP',
     tokenDescription: 'QuickSwap',
@@ -42,16 +42,16 @@ export const polygonPools = [
     tokenDecimals: 18,
     tokenDescriptionUrl: '#',
     earnedToken: 'mooQuickUST-MATIC',
-    earnedTokenAddress: '0x08B6f57fa718113DF784fFeC3E393FF1322cDBb9',
-    earnContractAddress: '0x08B6f57fa718113DF784fFeC3E393FF1322cDBb9',
+    earnedTokenAddress: '0x21280954C4F99747757076A0cC56ba594037075d',
+    earnContractAddress: '0x21280954C4F99747757076A0cC56ba594037075d',
     pricePerFullShare: 1,
     tvl: 0,
     oracle: 'lps',
-    oracleId: 'quick-UST-MATIC',
+    oracleId: 'quick-ust-matic',
     depositsPaused: false,
     status: 'active',
     platform: 'QuickSwap',
-    assets: ['UST', 'MATIC'],
+    assets: ['WORMHOLE', 'MATIC'],
     risks: [
       'COMPLEXITY_LOW',
       'BATTLE_TESTED',
@@ -64,9 +64,9 @@ export const polygonPools = [
     stratType: 'StratLP',
     withdrawalFee: '0%',
     addLiquidityUrl:
-      'https://quickswap.exchange/#/add/0x692597b009d13C4049a947CAB2239b7d6517875F/0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270',
+      'https://quickswap.exchange/#/add/0xE6469Ba6D2fD6130788E0eA9C0a0515900563b59/0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270',
     buyTokenUrl:
-      'https://quickswap.exchange/#/swap?outputCurrency=0x692597b009d13C4049a947CAB2239b7d6517875F&inputCurrency=0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270',
+      'https://quickswap.exchange/#/swap?outputCurrency=0xE6469Ba6D2fD6130788E0eA9C0a0515900563b59&inputCurrency=0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270',
   },
   {
     id: 'jarvis-2jpy',
