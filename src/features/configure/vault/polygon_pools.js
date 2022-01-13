@@ -34,7 +34,7 @@ export const polygonPools = [
       'https://quickswap.exchange/#/swap?inputCurrency=0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619&outputCurrency=0xfbdd194376de19a88118e84e279b977f165d01b8',
   },
   {
-    id: 'quick-ust-matic',
+    id: 'quick-ustw-matic',
     name: 'UST-MATIC LP',
     token: 'UST-MATIC LP',
     tokenDescription: 'QuickSwap',
@@ -47,11 +47,11 @@ export const polygonPools = [
     pricePerFullShare: 1,
     tvl: 0,
     oracle: 'lps',
-    oracleId: 'quick-ust-matic',
+    oracleId: 'quick-ustw-matic',
     depositsPaused: false,
     status: 'active',
     platform: 'QuickSwap',
-    assets: ['WORMHOLE', 'MATIC'],
+    assets: ['UST', 'MATIC'],
     risks: [
       'COMPLEXITY_LOW',
       'BATTLE_TESTED',
