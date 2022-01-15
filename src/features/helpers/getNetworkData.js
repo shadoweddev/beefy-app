@@ -3,6 +3,7 @@ import { indexBy } from './utils';
 import WalletConnectProvider from '@walletconnect/web3-provider';
 import { DeFiConnector } from 'deficonnect';
 import WalletLink from 'walletlink';
+import { CloverConnector } from '@clover-network/clover-connector';
 import { allNetworks } from '../../network';
 import {
   avalanchePools,
@@ -248,7 +249,6 @@ export const getNetworkBurnTokens = () => {
       };
     case 250:
       return {
-        [fantomAddressBook.tokens.TOMB.symbol]: fantomAddressBook.tokens.TOMB,
         [fantomAddressBook.tokens.fSING.symbol]: fantomAddressBook.tokens.fSING,
         [fantomAddressBook.tokens.PEAR.symbol]: fantomAddressBook.tokens.PEAR,
       };
@@ -444,6 +444,22 @@ export const getNetworkConnectors = t => {
               },
             },
           },
+          'custom-clover-bsc': {
+            display: {
+              logo: require(`images/wallets/clover.svg`),
+              name: 'Clover Wallet',
+              description: t('Connect with your Clover wallet and earn CLV'),
+            },
+            options: {
+              supportedChainIds: [56],
+            },
+            package: CloverConnector,
+            connector: async (ProviderPackage, options) => {
+              const provider = new ProviderPackage(options);
+              await provider.activate();
+              return provider.getProvider();
+            },
+          },
           'custom-binance': {
             display: {
               name: 'Binance',
@@ -527,6 +543,22 @@ export const getNetworkConnectors = t => {
           //     },
           //   },
           // },
+          'custom-clover-heco': {
+            display: {
+              logo: require(`images/wallets/clover.svg`),
+              name: 'Clover Wallet',
+              description: t('Connect with your Clover wallet and earn CLV'),
+            },
+            options: {
+              supportedChainIds: [128],
+            },
+            package: CloverConnector,
+            connector: async (ProviderPackage, options) => {
+              const provider = new ProviderPackage(options);
+              await provider.activate();
+              return provider.getProvider();
+            },
+          },
           'custom-math': {
             display: {
               name: 'Math',
@@ -616,6 +648,22 @@ export const getNetworkConnectors = t => {
               },
             },
           },
+          'custom-clover-polygon': {
+            display: {
+              logo: require(`images/wallets/clover.svg`),
+              name: 'Clover Wallet',
+              description: t('Connect with your Clover wallet and earn CLV'),
+            },
+            options: {
+              supportedChainIds: [137],
+            },
+            package: CloverConnector,
+            connector: async (ProviderPackage, options) => {
+              const provider = new ProviderPackage(options);
+              await provider.activate();
+              return provider.getProvider();
+            },
+          },
           'custom-cb-polygon': {
             display: {
               logo: require(`images/wallets/coinbase.png`),
@@ -669,6 +717,22 @@ export const getNetworkConnectors = t => {
               await provider.enable();
 
               return provider;
+            },
+          },
+          'custom-clover-fantom': {
+            display: {
+              logo: require(`images/wallets/clover.svg`),
+              name: 'Clover Wallet',
+              description: t('Connect with your Clover wallet and earn CLV'),
+            },
+            options: {
+              supportedChainIds: [250],
+            },
+            package: CloverConnector,
+            connector: async (ProviderPackage, options) => {
+              const provider = new ProviderPackage(options);
+              await provider.activate();
+              return provider.getProvider();
             },
           },
           'custom-cb-ftm': {
