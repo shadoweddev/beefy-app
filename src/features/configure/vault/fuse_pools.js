@@ -1,5 +1,5 @@
 export const fusePools = [
-   {
+  {
     id: 'fusefi-wfuse-usdc',
     name: 'USDC-FUSE LP',
     token: 'USDC-FUSE LP',
@@ -34,9 +34,44 @@ export const fusePools = [
       'https://app.fuse.fi/#/swap?inputCurrency=FUSE&outputCurrency=0x620fd5fa44be6af63715ef4e65ddfa0387ad13f5',
   },
   {
+    id: 'sushi-usdc-usdt',
+    name: 'USDC-USDT LP',
+    token: 'USDC-USDT SLP',
+    tokenDescription: 'SushiSwap',
+    tokenAddress: '0x00E485d833099679eD7D121CE46a9557ea8aDa1e',
+    tokenDecimals: 18,
+    tokenDescriptionUrl: '#',
+    earnedToken: 'mooSushiUSDC-USDT',
+    earnedTokenAddress: '0xf83866F9269fd96F4CAd5B660E11d8E031C48909',
+    earnContractAddress: '0xf83866F9269fd96F4CAd5B660E11d8E031C48909',
+    pricePerFullShare: 1,
+    tvl: 0,
+    oracle: 'lps',
+    oracleId: 'sushi-usdc-usdt',
+    oraclePrice: 0,
+    withdrawalFee: '0%',
+    depositsPaused: false,
+    status: 'active',
+    platform: 'SushiSwap',
+    assets: ['USDC', 'USDT'],
+    risks: [
+      'COMPLEXITY_LOW',
+      'BATTLE_TESTED',
+      'IL_LOW',
+      'MCAP_MEDIUM',
+      'AUDIT',
+      'CONTRACTS_VERIFIED',
+    ],
+    stratType: 'StratLP',
+    addLiquidityUrl:
+      'https://app.sushi.com/add/0x620fd5fa44BE6af63715Ef4E65DDFA0387aD13F5/0xFaDbBF8Ce7D5b7041bE672561bbA99f79c532e10',
+    buyTokenUrl:
+      'https://app.sushi.com/swap?inputCurrency=0x620fd5fa44BE6af63715Ef4E65DDFA0387aD13F5&outputCurrency=0xFaDbBF8Ce7D5b7041bE672561bbA99f79c532e10',
+  },
+  {
     id: 'sushi-sushi-weth',
     name: 'SUSHI-WETH LP',
-    token: 'SUSHI-WETH LP',
+    token: 'SUSHI-WETH SLP',
     tokenDescription: 'SushiSwap',
     tokenAddress: '0xF9C63E6e21d65ba3Cb6B95790F559E8Da1B38764',
     tokenDecimals: 18,
@@ -71,7 +106,7 @@ export const fusePools = [
   {
     id: 'sushi-wfuse-usdc',
     name: 'FUSE-USDC LP',
-    token: 'FUSE-USDC LP',
+    token: 'FUSE-USDC SLP',
     tokenDescription: 'SushiSwap',
     tokenAddress: '0xba9CA720e314F42E17E80991c1d0AFfE47387108',
     tokenDecimals: 18,
